@@ -24,12 +24,12 @@ const App = () => {
     <div id="main">
       <input id="input" onChange={onInputChange} />
       <button id="button" onClick={onButtonClick}>Click</button>
-      <ul id="list">
-        <li className="items" style={{display: 'none'}}>Placeholder</li>
-        {list.length > 0 && list.map((item) => (
-          <List key={item} listx={[item]} />
-        ))}
-      </ul>
+<ul id="list">
+
+     <List listx={list} />
+
+     </ul>
+        
     </div>
   );
 };
